@@ -20,27 +20,20 @@ To compile and run the program:
 2. Navigate to the repository directory.
 3. Compile the program using a C compiler (e.g., gcc).
     ```
-    gcc main.c match.c ticket.c -o football_ticket_booking -lrt
+    gcc SharedMemory.c.c -o SharedMemory -lrt
     ```
 4. Run the executable.
     ```
-    ./football_ticket_booking
+    ./SharedMemory
     ```
 
 ## Usage
 
 The program will simulate multiple clients requesting tickets for football matches. Each client process will generate random requests for match IDs and the number of tickets. The program will then check if the requested tickets are available and update the shared memory accordingly. Finally, the program will print the details of the booked tickets.
 
-## Structure
-
-The code has been organized into separate files for better readability and maintainability:
-- `match.h` and `match.c`: Define the match structure and functions for initializing matches.
-- `ticket.h` and `ticket.c`: Define functions for handling ticket requests.
-- `main.c`: Main program logic, including shared memory initialization, process forking, and semaphore usage.
-
 ## Authors
 
-- [Katerina Antoniou](https://github.com/k-antoniou)
+- [ Katerina Antoniou ](https://github.com/k-antoniou)
 
 ## License
 
